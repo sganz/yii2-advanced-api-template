@@ -153,9 +153,9 @@ _protected
         views/               contains view files for the Web application
         widgets/             contains frontend widgets
 
+api                      contains the entry script and Web resources for api services
 assets                   contains application assets generated during runtime
 backend                  contains the entry script and Web resources for backend side of application
-api                      contains the entry script and Web resources for api services
 themes                   contains frontend themes
 uploads                  contains various files that can be used by both frontend and backend applications
 
@@ -168,7 +168,8 @@ is from  https://github.com/nenad-zivkovic/yii2-advanced-template specific examp
 
 The sql for the test table for countries is -
 
-```CREATE TABLE `country` (
+```sql
+CREATE TABLE `country` (
   `code` CHAR(2) NOT NULL PRIMARY KEY,
   `name` CHAR(52) NOT NULL,
   `population` INT(11) NOT NULL DEFAULT '0'
@@ -183,11 +184,14 @@ INSERT INTO `Country` VALUES ('FR','France',59225700);
 INSERT INTO `Country` VALUES ('GB','United Kingdom',59623400);
 INSERT INTO `Country` VALUES ('IN','India',1013662000);
 INSERT INTO `Country` VALUES ('RU','Russia',146934000);
-INSERT INTO `Country` VALUES ('US','United States',278357000);```
+INSERT INTO `Country` VALUES ('US','United States',278357000); 
+```
 
 This was from a nice simple intro to yii2 and restfull controllers at - http://budiirawan.com/setup-restful-api-yii2
 
 Licensing 
 -------------------
-My work is licenced as WTFPL, which is NOT true for the original work which should remain Licensed as is was. 
-[![WTFPL](https://img.shields.io/badge/License-WTFPL-orange.svg)](http://www.wtfpl.net)[![Yii2](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](http://www.yiiframework.com/)
+My work is licenced as WTFPL, which is NOT true for the original work which should remain as Nenad Zivkovic Licensed it. 
+
+[![WTFPL](https://img.shields.io/badge/License-WTFPL-orange.svg)](http://www.wtfpl.net)
+[![Yii2](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](http://www.yiiframework.com/)
