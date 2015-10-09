@@ -1,0 +1,1481 @@
+2015-10-07 18:37:58 [127.0.0.1][-][q94m0skabsd7jh6laaaf758q63][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000] [1049] Unknown database 'advanced'' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Connection.php:579
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#3 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Schema.php(477): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Connection.php(732): yii\db\Schema->quoteValue('<span class="st...')
+#6 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Command.php(172): yii\db\Connection->quoteValue('<span class="st...')
+#7 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Command.php(806): yii\db\Command->getRawSql()
+#8 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#9 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Query.php(256): yii\db\Command->queryScalar()
+#10 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/DbSession.php(147): yii\db\Query->scalar(Object(yii\db\Connection))
+#11 [internal function]: yii\web\DbSession->readSession('<span class="st...')
+#12 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Session.php(127): session_start()
+#13 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Session.php(558): yii\web\Session->open()
+#14 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/User.php(607): yii\web\Session->get('<span class="st...')
+#15 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/User.php(176): yii\web\User->renewAuthStatus()
+#16 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/User.php(356): yii\web\User->getIdentity()
+#17 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/User.php(661): yii\web\User->getId()
+#18 /var/www/html/advanced-nenand/_protected/frontend/views/layouts/main.php(40): yii\web\User->can('<span class="st...')
+#19 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/a...')
+#20 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#21 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#22 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Controller.php(372): yii\base\Controller->renderContent('<span class="st...')
+#23 /var/www/html/advanced-nenand/_protected/frontend/controllers/SiteController.php(89): yii\base\Controller->render('<span class="st...')
+#24 [internal function]: frontend\controllers\SiteController->actionIndex()
+#25 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#26 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[]')
+#27 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[]')
+#28 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#29 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#30 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#31 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000] [1049] Unknown database 'advanced'' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Connection.php:534
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Schema.php(477): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Connection.php(732): yii\db\Schema->quoteValue('<span class="st...')
+#4 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Command.php(172): yii\db\Connection->quoteValue('<span class="st...')
+#5 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Command.php(806): yii\db\Command->getRawSql()
+#6 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Query.php(256): yii\db\Command->queryScalar()
+#8 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/DbSession.php(147): yii\db\Query->scalar(Object(yii\db\Connection))
+#9 [internal function]: yii\web\DbSession->readSession('<span class="st...')
+#10 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Session.php(127): session_start()
+#11 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Session.php(558): yii\web\Session->open()
+#12 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/User.php(607): yii\web\Session->get('<span class="st...')
+#13 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/User.php(176): yii\web\User->renewAuthStatus()
+#14 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/User.php(356): yii\web\User->getIdentity()
+#15 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/User.php(661): yii\web\User->getId()
+#16 /var/www/html/advanced-nenand/_protected/frontend/views/layouts/main.php(40): yii\web\User->can('<span class="st...')
+#17 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/a...')
+#18 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#19 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#20 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Controller.php(372): yii\base\Controller->renderContent('<span class="st...')
+#21 /var/www/html/advanced-nenand/_protected/frontend/controllers/SiteController.php(89): yii\base\Controller->render('<span class="st...')
+#22 [internal function]: frontend\controllers\SiteController->actionIndex()
+#23 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#24 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[]')
+#25 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[]')
+#26 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#27 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#29 {main}
+Additional Information:
+
+2015-10-07 18:37:58 [127.0.0.1][-][q94m0skabsd7jh6laaaf758q63][info][application] $_COOKIE = [
+    'dynagrid-1_' => '9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a:2:{i:0;s:11:\"dynagrid-1_\";i:1;a:0:{}}'
+    'dynagrid-100_1' => 'd1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a:2:{i:0;s:14:\"dynagrid-100_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_1' => '9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a:2:{i:0;s:12:\"dynagrid-1_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_3' => '4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a:2:{i:0;s:12:\"dynagrid-1_3\";i:1;s:201:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-primary\\\",\\\"keys\\\":[\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    '_csrf' => 'f61e3aa8c15bd723c1d5816e8b267ddeeeb6f398638263ff0fa544684769370ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Y7QAKjxRwX4Tkbcyp1_P1NSYyecyJo6t\";}'
+    'RevmakerAD' => 'ns1rc79dnanicveqt7lpsir7c6'
+    'PHPSESSID' => 'q94m0skabsd7jh6laaaf758q63'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'dynagrid-1_=9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22dynagrid-1_%22%3Bi%3A1%3Ba%3A0%3A%7B%7D%7D; dynagrid-100_1=d1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22dynagrid-100_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_1=9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_3=4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_3%22%3Bi%3A1%3Bs%3A201%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-primary%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; _csrf=f61e3aa8c15bd723c1d5816e8b267ddeeeb6f398638263ff0fa544684769370ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Y7QAKjxRwX4Tkbcyp1_P1NSYyecyJo6t%22%3B%7D; RevmakerAD=ns1rc79dnanicveqt7lpsir7c6; PHPSESSID=q94m0skabsd7jh6laaaf758q63'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced-nenand/index.php'
+    'REMOTE_PORT' => '44725'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced-nenand/'
+    'SCRIPT_NAME' => '/advanced-nenand/index.php'
+    'PHP_SELF' => '/advanced-nenand/index.php'
+    'REQUEST_TIME_FLOAT' => 1444243078.823
+    'REQUEST_TIME' => 1444243078
+]
+2015-10-07 18:37:58 [127.0.0.1][-][q94m0skabsd7jh6laaaf758q63][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception (Database Exception) 'yii\db\Exception' with message 'SQLSTATE[42000] [1049] Unknown database 'advanced'' 
+
+in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Connection.php:534
+
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Schema.php(477): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Connection.php(732): yii\db\Schema->quoteValue('q94m0skabsd7jh6...')
+#4 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Command.php(172): yii\db\Connection->quoteValue('q94m0skabsd7jh6...')
+#5 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Command.php(806): yii\db\Command->getRawSql()
+#6 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#7 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Query.php(256): yii\db\Command->queryScalar()
+#8 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/DbSession.php(147): yii\db\Query->scalar(Object(yii\db\Connection))
+#9 [internal function]: yii\web\DbSession->readSession('q94m0skabsd7jh6...')
+#10 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Session.php(127): session_start()
+#11 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Session.php(558): yii\web\Session->open()
+#12 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2-debug/panels/RequestPanel.php(124): yii\web\Session->get('__flash', Array)
+#13 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2-debug/panels/RequestPanel.php(90): yii\debug\panels\RequestPanel->getFlashes()
+#14 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2-debug/LogTarget.php(55): yii\debug\panels\RequestPanel->save()
+#15 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export()
+#16 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#17 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#18 [internal function]: yii\log\Logger->flush(true)
+#19 {main}
+2015-10-07 18:37:58 [127.0.0.1][-][q94m0skabsd7jh6laaaf758q63][info][application] $_COOKIE = [
+    'dynagrid-1_' => '9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a:2:{i:0;s:11:\"dynagrid-1_\";i:1;a:0:{}}'
+    'dynagrid-100_1' => 'd1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a:2:{i:0;s:14:\"dynagrid-100_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_1' => '9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a:2:{i:0;s:12:\"dynagrid-1_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_3' => '4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a:2:{i:0;s:12:\"dynagrid-1_3\";i:1;s:201:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-primary\\\",\\\"keys\\\":[\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    '_csrf' => 'f61e3aa8c15bd723c1d5816e8b267ddeeeb6f398638263ff0fa544684769370ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Y7QAKjxRwX4Tkbcyp1_P1NSYyecyJo6t\";}'
+    'RevmakerAD' => 'ns1rc79dnanicveqt7lpsir7c6'
+    'PHPSESSID' => 'q94m0skabsd7jh6laaaf758q63'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'dynagrid-1_=9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22dynagrid-1_%22%3Bi%3A1%3Ba%3A0%3A%7B%7D%7D; dynagrid-100_1=d1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22dynagrid-100_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_1=9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_3=4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_3%22%3Bi%3A1%3Bs%3A201%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-primary%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; _csrf=f61e3aa8c15bd723c1d5816e8b267ddeeeb6f398638263ff0fa544684769370ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Y7QAKjxRwX4Tkbcyp1_P1NSYyecyJo6t%22%3B%7D; RevmakerAD=ns1rc79dnanicveqt7lpsir7c6; PHPSESSID=q94m0skabsd7jh6laaaf758q63'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced-nenand/index.php'
+    'REMOTE_PORT' => '44725'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced-nenand/'
+    'SCRIPT_NAME' => '/advanced-nenand/index.php'
+    'PHP_SELF' => '/advanced-nenand/index.php'
+    'REQUEST_TIME_FLOAT' => 1444243078.823
+    'REQUEST_TIME' => 1444243078
+]
+2015-10-07 18:44:58 [127.0.0.1][-][q94m0skabsd7jh6laaaf758q63][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'template_test.yii_session' doesn't exist' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Command.php:837
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Command.php(837): PDOStatement->execute()
+#1 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Query.php(256): yii\db\Command->queryScalar()
+#3 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/DbSession.php(147): yii\db\Query->scalar(Object(yii\db\Connection))
+#4 [internal function]: yii\web\DbSession->readSession('<span class="st...')
+#5 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Session.php(127): session_start()
+#6 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Session.php(558): yii\web\Session->open()
+#7 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/User.php(607): yii\web\Session->get('<span class="st...')
+#8 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/User.php(176): yii\web\User->renewAuthStatus()
+#9 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/User.php(356): yii\web\User->getIdentity()
+#10 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/User.php(661): yii\web\User->getId()
+#11 /var/www/html/advanced-nenand/_protected/frontend/views/layouts/main.php(40): yii\web\User->can('<span class="st...')
+#12 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/a...')
+#13 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#14 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#15 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Controller.php(372): yii\base\Controller->renderContent('<span class="st...')
+#16 /var/www/html/advanced-nenand/_protected/frontend/controllers/SiteController.php(89): yii\base\Controller->render('<span class="st...')
+#17 [internal function]: frontend\controllers\SiteController->actionIndex()
+#18 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#19 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[]')
+#20 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[]')
+#21 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#22 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#24 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'template_test.yii_session' doesn't exist
+The SQL being executed was: SELECT `data` FROM `yii_session` WHERE `expire`>1444243498 AND `id`='q94m0skabsd7jh6laaaf758q63'' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT `data` F...')
+#1 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Query.php(256): yii\db\Command->queryScalar()
+#3 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/DbSession.php(147): yii\db\Query->scalar(Object(yii\db\Connection))
+#4 [internal function]: yii\web\DbSession->readSession('<span class="st...')
+#5 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Session.php(127): session_start()
+#6 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Session.php(558): yii\web\Session->open()
+#7 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/User.php(607): yii\web\Session->get('<span class="st...')
+#8 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/User.php(176): yii\web\User->renewAuthStatus()
+#9 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/User.php(356): yii\web\User->getIdentity()
+#10 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/User.php(661): yii\web\User->getId()
+#11 /var/www/html/advanced-nenand/_protected/frontend/views/layouts/main.php(40): yii\web\User->can('<span class="st...')
+#12 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/a...')
+#13 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#14 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#15 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Controller.php(372): yii\base\Controller->renderContent('<span class="st...')
+#16 /var/www/html/advanced-nenand/_protected/frontend/controllers/SiteController.php(89): yii\base\Controller->render('<span class="st...')
+#17 [internal function]: frontend\controllers\SiteController->actionIndex()
+#18 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#19 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[]')
+#20 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[]')
+#21 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#22 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#24 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'template_test.yii_session' doesn't exist
+)
+
+2015-10-07 18:44:58 [127.0.0.1][-][q94m0skabsd7jh6laaaf758q63][info][application] $_COOKIE = [
+    'dynagrid-1_' => '9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a:2:{i:0;s:11:\"dynagrid-1_\";i:1;a:0:{}}'
+    'dynagrid-100_1' => 'd1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a:2:{i:0;s:14:\"dynagrid-100_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_1' => '9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a:2:{i:0;s:12:\"dynagrid-1_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_3' => '4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a:2:{i:0;s:12:\"dynagrid-1_3\";i:1;s:201:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-primary\\\",\\\"keys\\\":[\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    '_csrf' => '2d48996300c28e5c4e633a588781e6e9823fdcb7aff011e10fecd0b9f3a1e6aaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4xsmlTGa4277LVoUIG3lKHhPP9rhZLpc\";}'
+    'RevmakerAD' => 'ns1rc79dnanicveqt7lpsir7c6'
+    'PHPSESSID' => 'q94m0skabsd7jh6laaaf758q63'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'dynagrid-1_=9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22dynagrid-1_%22%3Bi%3A1%3Ba%3A0%3A%7B%7D%7D; dynagrid-100_1=d1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22dynagrid-100_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_1=9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_3=4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_3%22%3Bi%3A1%3Bs%3A201%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-primary%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; _csrf=2d48996300c28e5c4e633a588781e6e9823fdcb7aff011e10fecd0b9f3a1e6aaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224xsmlTGa4277LVoUIG3lKHhPP9rhZLpc%22%3B%7D; RevmakerAD=ns1rc79dnanicveqt7lpsir7c6; PHPSESSID=q94m0skabsd7jh6laaaf758q63'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced-nenand/index.php'
+    'REMOTE_PORT' => '44861'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced-nenand/'
+    'SCRIPT_NAME' => '/advanced-nenand/index.php'
+    'PHP_SELF' => '/advanced-nenand/index.php'
+    'REQUEST_TIME_FLOAT' => 1444243498.001
+    'REQUEST_TIME' => 1444243498
+]
+2015-10-07 18:44:58 [127.0.0.1][-][q94m0skabsd7jh6laaaf758q63][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception (Database Exception) 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'template_test.yii_session' doesn't exist
+The SQL being executed was: SELECT `data` FROM `yii_session` WHERE `expire`>1444243498 AND `id`='q94m0skabsd7jh6laaaf758q63'' 
+
+in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Schema.php:628
+
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT `data` F...')
+#1 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Command.php(385): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/db/Query.php(256): yii\db\Command->queryScalar()
+#3 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/DbSession.php(147): yii\db\Query->scalar(Object(yii\db\Connection))
+#4 [internal function]: yii\web\DbSession->readSession('q94m0skabsd7jh6...')
+#5 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Session.php(127): session_start()
+#6 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Session.php(558): yii\web\Session->open()
+#7 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2-debug/panels/RequestPanel.php(124): yii\web\Session->get('__flash', Array)
+#8 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2-debug/panels/RequestPanel.php(90): yii\debug\panels\RequestPanel->getFlashes()
+#9 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2-debug/LogTarget.php(55): yii\debug\panels\RequestPanel->save()
+#10 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export()
+#11 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#12 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#13 [internal function]: yii\log\Logger->flush(true)
+#14 {main}
+2015-10-07 18:44:58 [127.0.0.1][-][q94m0skabsd7jh6laaaf758q63][info][application] $_COOKIE = [
+    'dynagrid-1_' => '9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a:2:{i:0;s:11:\"dynagrid-1_\";i:1;a:0:{}}'
+    'dynagrid-100_1' => 'd1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a:2:{i:0;s:14:\"dynagrid-100_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_1' => '9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a:2:{i:0;s:12:\"dynagrid-1_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_3' => '4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a:2:{i:0;s:12:\"dynagrid-1_3\";i:1;s:201:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-primary\\\",\\\"keys\\\":[\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    '_csrf' => '2d48996300c28e5c4e633a588781e6e9823fdcb7aff011e10fecd0b9f3a1e6aaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4xsmlTGa4277LVoUIG3lKHhPP9rhZLpc\";}'
+    'RevmakerAD' => 'ns1rc79dnanicveqt7lpsir7c6'
+    'PHPSESSID' => 'q94m0skabsd7jh6laaaf758q63'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'dynagrid-1_=9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22dynagrid-1_%22%3Bi%3A1%3Ba%3A0%3A%7B%7D%7D; dynagrid-100_1=d1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22dynagrid-100_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_1=9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_3=4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_3%22%3Bi%3A1%3Bs%3A201%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-primary%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; _csrf=2d48996300c28e5c4e633a588781e6e9823fdcb7aff011e10fecd0b9f3a1e6aaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224xsmlTGa4277LVoUIG3lKHhPP9rhZLpc%22%3B%7D; RevmakerAD=ns1rc79dnanicveqt7lpsir7c6; PHPSESSID=q94m0skabsd7jh6laaaf758q63'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced-nenand/index.php'
+    'REMOTE_PORT' => '44861'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced-nenand/'
+    'SCRIPT_NAME' => '/advanced-nenand/index.php'
+    'PHP_SELF' => '/advanced-nenand/index.php'
+    'REQUEST_TIME_FLOAT' => 1444243498.001
+    'REQUEST_TIME' => 1444243498
+]
+2015-10-07 18:46:20 [127.0.0.1][-][q94m0skabsd7jh6laaaf758q63][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Rule not found: isAuthor' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/rbac/BaseManager.php:210
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/rbac/DbManager.php(192): yii\rbac\BaseManager->executeRule(NULL, Object(yii\rbac\Permission), Array)
+#1 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/rbac/DbManager.php(206): yii\rbac\DbManager->checkAccessRecursive(NULL, 'updateOwnArticl...', Array, Array)
+#2 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/rbac/DbManager.php(126): yii\rbac\DbManager->checkAccessRecursive(NULL, 'updateArticle', Array, Array)
+#3 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/User.php(661): yii\rbac\DbManager->checkAccess(NULL, 'updateArticle', Array)
+#4 /var/www/html/advanced-nenand/_protected/frontend/views/article/view.php(24): yii\web\User->can('updateArticle', Array)
+#5 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/a...')
+#6 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#7 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/a...', Array, Object(frontend\controllers\ArticleController))
+#8 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\ArticleController))
+#9 /var/www/html/advanced-nenand/_protected/frontend/controllers/ArticleController.php(53): yii\base\Controller->render('view', Array)
+#10 [internal function]: frontend\controllers\ArticleController->actionView('2')
+#11 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#14 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('article/view', Array)
+#15 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#17 {main}
+2015-10-07 18:46:20 [127.0.0.1][-][q94m0skabsd7jh6laaaf758q63][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    'dynagrid-1_' => '9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a:2:{i:0;s:11:\"dynagrid-1_\";i:1;a:0:{}}'
+    'dynagrid-100_1' => 'd1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a:2:{i:0;s:14:\"dynagrid-100_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_1' => '9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a:2:{i:0;s:12:\"dynagrid-1_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_3' => '4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a:2:{i:0;s:12:\"dynagrid-1_3\";i:1;s:201:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-primary\\\",\\\"keys\\\":[\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    '_csrf' => '2d48996300c28e5c4e633a588781e6e9823fdcb7aff011e10fecd0b9f3a1e6aaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4xsmlTGa4277LVoUIG3lKHhPP9rhZLpc\";}'
+    'RevmakerAD' => 'ns1rc79dnanicveqt7lpsir7c6'
+    'PHPSESSID' => 'q94m0skabsd7jh6laaaf758q63'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/advanced-nenand/article/index'
+    'HTTP_COOKIE' => 'dynagrid-1_=9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22dynagrid-1_%22%3Bi%3A1%3Ba%3A0%3A%7B%7D%7D; dynagrid-100_1=d1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22dynagrid-100_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_1=9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_3=4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_3%22%3Bi%3A1%3Bs%3A201%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-primary%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; _csrf=2d48996300c28e5c4e633a588781e6e9823fdcb7aff011e10fecd0b9f3a1e6aaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224xsmlTGa4277LVoUIG3lKHhPP9rhZLpc%22%3B%7D; RevmakerAD=ns1rc79dnanicveqt7lpsir7c6; PHPSESSID=q94m0skabsd7jh6laaaf758q63'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced-nenand/index.php'
+    'REMOTE_PORT' => '44867'
+    'REDIRECT_QUERY_STRING' => 'id=2'
+    'REDIRECT_URL' => '/advanced-nenand/article/view'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'REQUEST_URI' => '/advanced-nenand/article/view?id=2'
+    'SCRIPT_NAME' => '/advanced-nenand/index.php'
+    'PHP_SELF' => '/advanced-nenand/index.php'
+    'REQUEST_TIME_FLOAT' => 1444243580.086
+    'REQUEST_TIME' => 1444243580
+]
+2015-10-07 18:47:19 [127.0.0.1][-][4hqtbbu0o9hdel0p9139du3vi2][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Rule not found: isAuthor' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/rbac/BaseManager.php:210
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/rbac/DbManager.php(192): yii\rbac\BaseManager->executeRule(NULL, Object(yii\rbac\Permission), Array)
+#1 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/rbac/DbManager.php(206): yii\rbac\DbManager->checkAccessRecursive(NULL, 'updateOwnArticl...', Array, Array)
+#2 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/rbac/DbManager.php(126): yii\rbac\DbManager->checkAccessRecursive(NULL, 'updateArticle', Array, Array)
+#3 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/User.php(661): yii\rbac\DbManager->checkAccess(NULL, 'updateArticle', Array)
+#4 /var/www/html/advanced-nenand/_protected/frontend/views/article/view.php(24): yii\web\User->can('updateArticle', Array)
+#5 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/a...')
+#6 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#7 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/a...', Array, Object(frontend\controllers\ArticleController))
+#8 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\ArticleController))
+#9 /var/www/html/advanced-nenand/_protected/frontend/controllers/ArticleController.php(53): yii\base\Controller->render('view', Array)
+#10 [internal function]: frontend\controllers\ArticleController->actionView('2')
+#11 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#14 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('article/view', Array)
+#15 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#17 {main}
+2015-10-07 18:47:19 [127.0.0.1][-][4hqtbbu0o9hdel0p9139du3vi2][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    'dynagrid-1_' => '9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a:2:{i:0;s:11:\"dynagrid-1_\";i:1;a:0:{}}'
+    'dynagrid-100_1' => 'd1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a:2:{i:0;s:14:\"dynagrid-100_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_1' => '9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a:2:{i:0;s:12:\"dynagrid-1_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_3' => '4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a:2:{i:0;s:12:\"dynagrid-1_3\";i:1;s:201:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-primary\\\",\\\"keys\\\":[\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    '_csrf' => '2d48996300c28e5c4e633a588781e6e9823fdcb7aff011e10fecd0b9f3a1e6aaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4xsmlTGa4277LVoUIG3lKHhPP9rhZLpc\";}'
+    'RevmakerAD' => 'ns1rc79dnanicveqt7lpsir7c6'
+    'PHPSESSID' => '4hqtbbu0o9hdel0p9139du3vi2'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/advanced-nenand/article/index'
+    'HTTP_COOKIE' => 'dynagrid-1_=9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22dynagrid-1_%22%3Bi%3A1%3Ba%3A0%3A%7B%7D%7D; dynagrid-100_1=d1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22dynagrid-100_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_1=9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_3=4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_3%22%3Bi%3A1%3Bs%3A201%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-primary%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; _csrf=2d48996300c28e5c4e633a588781e6e9823fdcb7aff011e10fecd0b9f3a1e6aaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224xsmlTGa4277LVoUIG3lKHhPP9rhZLpc%22%3B%7D; RevmakerAD=ns1rc79dnanicveqt7lpsir7c6; PHPSESSID=4hqtbbu0o9hdel0p9139du3vi2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced-nenand/index.php'
+    'REMOTE_PORT' => '44891'
+    'REDIRECT_QUERY_STRING' => 'id=2'
+    'REDIRECT_URL' => '/advanced-nenand/article/view'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'REQUEST_URI' => '/advanced-nenand/article/view?id=2'
+    'SCRIPT_NAME' => '/advanced-nenand/index.php'
+    'PHP_SELF' => '/advanced-nenand/index.php'
+    'REQUEST_TIME_FLOAT' => 1444243639.849
+    'REQUEST_TIME' => 1444243639
+]
+2015-10-07 18:47:55 [127.0.0.1][-][4hqtbbu0o9hdel0p9139du3vi2][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Rule not found: isAuthor' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/rbac/BaseManager.php:210
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/rbac/DbManager.php(192): yii\rbac\BaseManager->executeRule(NULL, Object(yii\rbac\Permission), Array)
+#1 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/rbac/DbManager.php(206): yii\rbac\DbManager->checkAccessRecursive(NULL, 'updateOwnArticl...', Array, Array)
+#2 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/rbac/DbManager.php(126): yii\rbac\DbManager->checkAccessRecursive(NULL, 'updateArticle', Array, Array)
+#3 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/User.php(661): yii\rbac\DbManager->checkAccess(NULL, 'updateArticle', Array)
+#4 /var/www/html/advanced-nenand/_protected/frontend/views/article/view.php(24): yii\web\User->can('updateArticle', Array)
+#5 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/a...')
+#6 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#7 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/a...', Array, Object(frontend\controllers\ArticleController))
+#8 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\ArticleController))
+#9 /var/www/html/advanced-nenand/_protected/frontend/controllers/ArticleController.php(53): yii\base\Controller->render('view', Array)
+#10 [internal function]: frontend\controllers\ArticleController->actionView('2')
+#11 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#14 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('article/view', Array)
+#15 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#17 {main}
+2015-10-07 18:47:55 [127.0.0.1][-][4hqtbbu0o9hdel0p9139du3vi2][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    'dynagrid-1_' => '9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a:2:{i:0;s:11:\"dynagrid-1_\";i:1;a:0:{}}'
+    'dynagrid-100_1' => 'd1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a:2:{i:0;s:14:\"dynagrid-100_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_1' => '9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a:2:{i:0;s:12:\"dynagrid-1_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_3' => '4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a:2:{i:0;s:12:\"dynagrid-1_3\";i:1;s:201:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-primary\\\",\\\"keys\\\":[\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    '_csrf' => '2d48996300c28e5c4e633a588781e6e9823fdcb7aff011e10fecd0b9f3a1e6aaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4xsmlTGa4277LVoUIG3lKHhPP9rhZLpc\";}'
+    'RevmakerAD' => 'ns1rc79dnanicveqt7lpsir7c6'
+    'PHPSESSID' => '4hqtbbu0o9hdel0p9139du3vi2'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/advanced-nenand/article/index'
+    'HTTP_COOKIE' => 'dynagrid-1_=9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22dynagrid-1_%22%3Bi%3A1%3Ba%3A0%3A%7B%7D%7D; dynagrid-100_1=d1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22dynagrid-100_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_1=9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_3=4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_3%22%3Bi%3A1%3Bs%3A201%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-primary%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; _csrf=2d48996300c28e5c4e633a588781e6e9823fdcb7aff011e10fecd0b9f3a1e6aaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224xsmlTGa4277LVoUIG3lKHhPP9rhZLpc%22%3B%7D; RevmakerAD=ns1rc79dnanicveqt7lpsir7c6; PHPSESSID=4hqtbbu0o9hdel0p9139du3vi2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced-nenand/index.php'
+    'REMOTE_PORT' => '44897'
+    'REDIRECT_QUERY_STRING' => 'id=2'
+    'REDIRECT_URL' => '/advanced-nenand/article/view'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'REQUEST_URI' => '/advanced-nenand/article/view?id=2'
+    'SCRIPT_NAME' => '/advanced-nenand/index.php'
+    'PHP_SELF' => '/advanced-nenand/index.php'
+    'REQUEST_TIME_FLOAT' => 1444243675.14
+    'REQUEST_TIME' => 1444243675
+]
+2015-10-07 19:15:45 [127.0.0.1][1][03m8l90opo54n32vcih95pb6e1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: frontend/' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#1 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('frontend', Array)
+#2 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-10-07 19:15:45 [127.0.0.1][1][03m8l90opo54n32vcih95pb6e1][info][application] $_COOKIE = [
+    'dynagrid-1_' => '9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a:2:{i:0;s:11:\"dynagrid-1_\";i:1;a:0:{}}'
+    'dynagrid-100_1' => 'd1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a:2:{i:0;s:14:\"dynagrid-100_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_1' => '9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a:2:{i:0;s:12:\"dynagrid-1_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_3' => '4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a:2:{i:0;s:12:\"dynagrid-1_3\";i:1;s:201:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-primary\\\",\\\"keys\\\":[\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    '_csrf' => 'a0916bb72e793b30c2ed4455bc68567a0afa434aae6d6e9b3ce449d30082a848a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"A-7K3dADICzS0Nwz3wDyN_pC2wD88sBc\";}'
+    'RevmakerAD' => 'ns1rc79dnanicveqt7lpsir7c6'
+    'PHPSESSID' => '03m8l90opo54n32vcih95pb6e1'
+    '_identity' => '6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/advanced-nenand/backend/'
+    '__captcha/site/captcha' => 'dorpjai'
+    '__captcha/site/captchacount' => 1
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'dynagrid-1_=9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22dynagrid-1_%22%3Bi%3A1%3Ba%3A0%3A%7B%7D%7D; dynagrid-100_1=d1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22dynagrid-100_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_1=9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_3=4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_3%22%3Bi%3A1%3Bs%3A201%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-primary%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; _csrf=a0916bb72e793b30c2ed4455bc68567a0afa434aae6d6e9b3ce449d30082a848a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22A-7K3dADICzS0Nwz3wDyN_pC2wD88sBc%22%3B%7D; RevmakerAD=ns1rc79dnanicveqt7lpsir7c6; PHPSESSID=03m8l90opo54n32vcih95pb6e1; _identity=6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced-nenand/index.php'
+    'REMOTE_PORT' => '45113'
+    'REDIRECT_URL' => '/advanced-nenand/frontend'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced-nenand/frontend'
+    'SCRIPT_NAME' => '/advanced-nenand/index.php'
+    'PHP_SELF' => '/advanced-nenand/index.php'
+    'REQUEST_TIME_FLOAT' => 1444245345.338
+    'REQUEST_TIME' => 1444245345
+]
+2015-10-07 19:50:52 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api".' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('api', Array)
+#1 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-10-07 19:50:52 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][info][application] $_COOKIE = [
+    'dynagrid-1_' => '9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a:2:{i:0;s:11:\"dynagrid-1_\";i:1;a:0:{}}'
+    'dynagrid-100_1' => 'd1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a:2:{i:0;s:14:\"dynagrid-100_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_1' => '9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a:2:{i:0;s:12:\"dynagrid-1_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_3' => '4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a:2:{i:0;s:12:\"dynagrid-1_3\";i:1;s:201:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-primary\\\",\\\"keys\\\":[\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    '_identity' => '6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS\",2592000]\";}'
+    '_csrf' => 'c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R\";}'
+    'RevmakerAD' => 'ns1rc79dnanicveqt7lpsir7c6'
+    'PHPSESSID' => 'kb3kf23hcp56hj4lbbu0teu735'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/advanced-nenand/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'dynagrid-1_=9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22dynagrid-1_%22%3Bi%3A1%3Ba%3A0%3A%7B%7D%7D; dynagrid-100_1=d1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22dynagrid-100_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_1=9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_3=4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_3%22%3Bi%3A1%3Bs%3A201%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-primary%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; _identity=6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS%22%2C2592000%5D%22%3B%7D; _csrf=c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R%22%3B%7D; RevmakerAD=ns1rc79dnanicveqt7lpsir7c6; PHPSESSID=kb3kf23hcp56hj4lbbu0teu735'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced-nenand/index.php'
+    'REMOTE_PORT' => '45321'
+    'REDIRECT_URL' => '/advanced-nenand/api'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced-nenand/api'
+    'SCRIPT_NAME' => '/advanced-nenand/index.php'
+    'PHP_SELF' => '/advanced-nenand/index.php'
+    'REQUEST_TIME_FLOAT' => 1444247452.377
+    'REQUEST_TIME' => 1444247452
+]
+2015-10-07 19:53:26 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api".' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('api', Array)
+#1 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-10-07 19:53:26 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][info][application] $_COOKIE = [
+    'dynagrid-1_' => '9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a:2:{i:0;s:11:\"dynagrid-1_\";i:1;a:0:{}}'
+    'dynagrid-100_1' => 'd1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a:2:{i:0;s:14:\"dynagrid-100_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_1' => '9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a:2:{i:0;s:12:\"dynagrid-1_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_3' => '4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a:2:{i:0;s:12:\"dynagrid-1_3\";i:1;s:201:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-primary\\\",\\\"keys\\\":[\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    '_identity' => '6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS\",2592000]\";}'
+    '_csrf' => 'c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R\";}'
+    'RevmakerAD' => 'ns1rc79dnanicveqt7lpsir7c6'
+    'PHPSESSID' => 'kb3kf23hcp56hj4lbbu0teu735'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/advanced-nenand/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'dynagrid-1_=9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22dynagrid-1_%22%3Bi%3A1%3Ba%3A0%3A%7B%7D%7D; dynagrid-100_1=d1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22dynagrid-100_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_1=9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_3=4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_3%22%3Bi%3A1%3Bs%3A201%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-primary%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; _identity=6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS%22%2C2592000%5D%22%3B%7D; _csrf=c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R%22%3B%7D; RevmakerAD=ns1rc79dnanicveqt7lpsir7c6; PHPSESSID=kb3kf23hcp56hj4lbbu0teu735'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced-nenand/index.php'
+    'REMOTE_PORT' => '45463'
+    'REDIRECT_URL' => '/advanced-nenand/api'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced-nenand/api'
+    'SCRIPT_NAME' => '/advanced-nenand/index.php'
+    'PHP_SELF' => '/advanced-nenand/index.php'
+    'REQUEST_TIME_FLOAT' => 1444247606.501
+    'REQUEST_TIME' => 1444247606
+]
+2015-10-07 19:54:45 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api/web/v1/countries".' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('api/web/v1/coun...', Array)
+#1 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-10-07 19:54:45 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][info][application] $_COOKIE = [
+    'dynagrid-1_' => '9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a:2:{i:0;s:11:\"dynagrid-1_\";i:1;a:0:{}}'
+    'dynagrid-100_1' => 'd1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a:2:{i:0;s:14:\"dynagrid-100_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_1' => '9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a:2:{i:0;s:12:\"dynagrid-1_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_3' => '4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a:2:{i:0;s:12:\"dynagrid-1_3\";i:1;s:201:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-primary\\\",\\\"keys\\\":[\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    '_identity' => '6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS\",2592000]\";}'
+    '_csrf' => 'c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R\";}'
+    'RevmakerAD' => 'ns1rc79dnanicveqt7lpsir7c6'
+    'PHPSESSID' => 'kb3kf23hcp56hj4lbbu0teu735'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/advanced-nenand/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'dynagrid-1_=9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22dynagrid-1_%22%3Bi%3A1%3Ba%3A0%3A%7B%7D%7D; dynagrid-100_1=d1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22dynagrid-100_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_1=9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_3=4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_3%22%3Bi%3A1%3Bs%3A201%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-primary%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; _identity=6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS%22%2C2592000%5D%22%3B%7D; _csrf=c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R%22%3B%7D; RevmakerAD=ns1rc79dnanicveqt7lpsir7c6; PHPSESSID=kb3kf23hcp56hj4lbbu0teu735'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced-nenand/index.php'
+    'REMOTE_PORT' => '45480'
+    'REDIRECT_URL' => '/advanced-nenand/api/web/v1/countries'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced-nenand/api/web/v1/countries'
+    'SCRIPT_NAME' => '/advanced-nenand/index.php'
+    'PHP_SELF' => '/advanced-nenand/index.php'
+    'REQUEST_TIME_FLOAT' => 1444247685.654
+    'REQUEST_TIME' => 1444247685
+]
+2015-10-07 19:58:40 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api".' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('api', Array)
+#1 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-10-07 19:58:40 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][info][application] $_COOKIE = [
+    'dynagrid-1_' => '9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a:2:{i:0;s:11:\"dynagrid-1_\";i:1;a:0:{}}'
+    'dynagrid-100_1' => 'd1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a:2:{i:0;s:14:\"dynagrid-100_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_1' => '9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a:2:{i:0;s:12:\"dynagrid-1_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_3' => '4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a:2:{i:0;s:12:\"dynagrid-1_3\";i:1;s:201:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-primary\\\",\\\"keys\\\":[\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    '_identity' => '6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS\",2592000]\";}'
+    '_csrf' => 'c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R\";}'
+    'RevmakerAD' => 'ns1rc79dnanicveqt7lpsir7c6'
+    'PHPSESSID' => 'kb3kf23hcp56hj4lbbu0teu735'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/advanced-nenand/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'dynagrid-1_=9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22dynagrid-1_%22%3Bi%3A1%3Ba%3A0%3A%7B%7D%7D; dynagrid-100_1=d1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22dynagrid-100_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_1=9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_3=4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_3%22%3Bi%3A1%3Bs%3A201%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-primary%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; _identity=6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS%22%2C2592000%5D%22%3B%7D; _csrf=c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R%22%3B%7D; RevmakerAD=ns1rc79dnanicveqt7lpsir7c6; PHPSESSID=kb3kf23hcp56hj4lbbu0teu735'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced-nenand/index.php'
+    'REMOTE_PORT' => '45493'
+    'REDIRECT_URL' => '/advanced-nenand/api'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced-nenand/api'
+    'SCRIPT_NAME' => '/advanced-nenand/index.php'
+    'PHP_SELF' => '/advanced-nenand/index.php'
+    'REQUEST_TIME_FLOAT' => 1444247920.758
+    'REQUEST_TIME' => 1444247920
+]
+2015-10-07 19:58:52 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api/countries".' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('api/countries', Array)
+#1 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-10-07 19:58:52 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][info][application] $_COOKIE = [
+    'dynagrid-1_' => '9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a:2:{i:0;s:11:\"dynagrid-1_\";i:1;a:0:{}}'
+    'dynagrid-100_1' => 'd1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a:2:{i:0;s:14:\"dynagrid-100_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_1' => '9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a:2:{i:0;s:12:\"dynagrid-1_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_3' => '4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a:2:{i:0;s:12:\"dynagrid-1_3\";i:1;s:201:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-primary\\\",\\\"keys\\\":[\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    '_identity' => '6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS\",2592000]\";}'
+    '_csrf' => 'c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R\";}'
+    'RevmakerAD' => 'ns1rc79dnanicveqt7lpsir7c6'
+    'PHPSESSID' => 'kb3kf23hcp56hj4lbbu0teu735'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/advanced-nenand/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'dynagrid-1_=9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22dynagrid-1_%22%3Bi%3A1%3Ba%3A0%3A%7B%7D%7D; dynagrid-100_1=d1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22dynagrid-100_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_1=9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_3=4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_3%22%3Bi%3A1%3Bs%3A201%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-primary%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; _identity=6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS%22%2C2592000%5D%22%3B%7D; _csrf=c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R%22%3B%7D; RevmakerAD=ns1rc79dnanicveqt7lpsir7c6; PHPSESSID=kb3kf23hcp56hj4lbbu0teu735'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced-nenand/index.php'
+    'REMOTE_PORT' => '45499'
+    'REDIRECT_URL' => '/advanced-nenand/api/countries'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced-nenand/api/countries'
+    'SCRIPT_NAME' => '/advanced-nenand/index.php'
+    'PHP_SELF' => '/advanced-nenand/index.php'
+    'REQUEST_TIME_FLOAT' => 1444247932.131
+    'REQUEST_TIME' => 1444247932
+]
+2015-10-07 19:59:02 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api/v1/countries".' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('api/v1/countrie...', Array)
+#1 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-10-07 19:59:02 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][info][application] $_COOKIE = [
+    'dynagrid-1_' => '9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a:2:{i:0;s:11:\"dynagrid-1_\";i:1;a:0:{}}'
+    'dynagrid-100_1' => 'd1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a:2:{i:0;s:14:\"dynagrid-100_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_1' => '9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a:2:{i:0;s:12:\"dynagrid-1_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_3' => '4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a:2:{i:0;s:12:\"dynagrid-1_3\";i:1;s:201:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-primary\\\",\\\"keys\\\":[\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    '_identity' => '6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS\",2592000]\";}'
+    '_csrf' => 'c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R\";}'
+    'RevmakerAD' => 'ns1rc79dnanicveqt7lpsir7c6'
+    'PHPSESSID' => 'kb3kf23hcp56hj4lbbu0teu735'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/advanced-nenand/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'dynagrid-1_=9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22dynagrid-1_%22%3Bi%3A1%3Ba%3A0%3A%7B%7D%7D; dynagrid-100_1=d1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22dynagrid-100_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_1=9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_3=4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_3%22%3Bi%3A1%3Bs%3A201%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-primary%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; _identity=6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS%22%2C2592000%5D%22%3B%7D; _csrf=c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R%22%3B%7D; RevmakerAD=ns1rc79dnanicveqt7lpsir7c6; PHPSESSID=kb3kf23hcp56hj4lbbu0teu735'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced-nenand/index.php'
+    'REMOTE_PORT' => '45501'
+    'REDIRECT_URL' => '/advanced-nenand/api/v1/countries'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced-nenand/api/v1/countries'
+    'SCRIPT_NAME' => '/advanced-nenand/index.php'
+    'PHP_SELF' => '/advanced-nenand/index.php'
+    'REQUEST_TIME_FLOAT' => 1444247942.642
+    'REQUEST_TIME' => 1444247942
+]
+2015-10-07 20:06:27 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api/web/v1/countries".' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('api/web/v1/coun...', Array)
+#1 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-10-07 20:06:27 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][info][application] $_COOKIE = [
+    'dynagrid-1_' => '9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a:2:{i:0;s:11:\"dynagrid-1_\";i:1;a:0:{}}'
+    'dynagrid-100_1' => 'd1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a:2:{i:0;s:14:\"dynagrid-100_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_1' => '9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a:2:{i:0;s:12:\"dynagrid-1_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_3' => '4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a:2:{i:0;s:12:\"dynagrid-1_3\";i:1;s:201:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-primary\\\",\\\"keys\\\":[\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    '_identity' => '6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS\",2592000]\";}'
+    '_csrf' => 'c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R\";}'
+    'RevmakerAD' => 'ns1rc79dnanicveqt7lpsir7c6'
+    'PHPSESSID' => 'kb3kf23hcp56hj4lbbu0teu735'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/advanced-nenand/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'dynagrid-1_=9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22dynagrid-1_%22%3Bi%3A1%3Ba%3A0%3A%7B%7D%7D; dynagrid-100_1=d1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22dynagrid-100_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_1=9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_3=4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_3%22%3Bi%3A1%3Bs%3A201%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-primary%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; _identity=6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS%22%2C2592000%5D%22%3B%7D; _csrf=c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R%22%3B%7D; RevmakerAD=ns1rc79dnanicveqt7lpsir7c6; PHPSESSID=kb3kf23hcp56hj4lbbu0teu735'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced-nenand/index.php'
+    'REMOTE_PORT' => '45528'
+    'REDIRECT_URL' => '/advanced-nenand/api/web/v1/countries'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced-nenand/api/web/v1/countries'
+    'SCRIPT_NAME' => '/advanced-nenand/index.php'
+    'PHP_SELF' => '/advanced-nenand/index.php'
+    'REQUEST_TIME_FLOAT' => 1444248387.125
+    'REQUEST_TIME' => 1444248387
+]
+2015-10-07 20:06:28 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api/web/v1/countries".' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('api/web/v1/coun...', Array)
+#1 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-10-07 20:06:28 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][info][application] $_COOKIE = [
+    'dynagrid-1_' => '9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a:2:{i:0;s:11:\"dynagrid-1_\";i:1;a:0:{}}'
+    'dynagrid-100_1' => 'd1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a:2:{i:0;s:14:\"dynagrid-100_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_1' => '9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a:2:{i:0;s:12:\"dynagrid-1_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_3' => '4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a:2:{i:0;s:12:\"dynagrid-1_3\";i:1;s:201:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-primary\\\",\\\"keys\\\":[\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    '_identity' => '6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS\",2592000]\";}'
+    '_csrf' => 'c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R\";}'
+    'RevmakerAD' => 'ns1rc79dnanicveqt7lpsir7c6'
+    'PHPSESSID' => 'kb3kf23hcp56hj4lbbu0teu735'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/advanced-nenand/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'dynagrid-1_=9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22dynagrid-1_%22%3Bi%3A1%3Ba%3A0%3A%7B%7D%7D; dynagrid-100_1=d1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22dynagrid-100_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_1=9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_3=4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_3%22%3Bi%3A1%3Bs%3A201%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-primary%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; _identity=6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS%22%2C2592000%5D%22%3B%7D; _csrf=c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R%22%3B%7D; RevmakerAD=ns1rc79dnanicveqt7lpsir7c6; PHPSESSID=kb3kf23hcp56hj4lbbu0teu735'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced-nenand/index.php'
+    'REMOTE_PORT' => '45528'
+    'REDIRECT_URL' => '/advanced-nenand/api/web/v1/countries'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced-nenand/api/web/v1/countries'
+    'SCRIPT_NAME' => '/advanced-nenand/index.php'
+    'PHP_SELF' => '/advanced-nenand/index.php'
+    'REQUEST_TIME_FLOAT' => 1444248388.409
+    'REQUEST_TIME' => 1444248388
+]
+2015-10-07 20:06:53 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api/web/v1/Countries".' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('api/web/v1/Coun...', Array)
+#1 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-10-07 20:06:53 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][info][application] $_COOKIE = [
+    'dynagrid-1_' => '9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a:2:{i:0;s:11:\"dynagrid-1_\";i:1;a:0:{}}'
+    'dynagrid-100_1' => 'd1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a:2:{i:0;s:14:\"dynagrid-100_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_1' => '9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a:2:{i:0;s:12:\"dynagrid-1_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_3' => '4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a:2:{i:0;s:12:\"dynagrid-1_3\";i:1;s:201:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-primary\\\",\\\"keys\\\":[\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    '_identity' => '6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS\",2592000]\";}'
+    '_csrf' => 'c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R\";}'
+    'RevmakerAD' => 'ns1rc79dnanicveqt7lpsir7c6'
+    'PHPSESSID' => 'kb3kf23hcp56hj4lbbu0teu735'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/advanced-nenand/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'dynagrid-1_=9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22dynagrid-1_%22%3Bi%3A1%3Ba%3A0%3A%7B%7D%7D; dynagrid-100_1=d1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22dynagrid-100_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_1=9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_3=4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_3%22%3Bi%3A1%3Bs%3A201%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-primary%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; _identity=6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS%22%2C2592000%5D%22%3B%7D; _csrf=c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R%22%3B%7D; RevmakerAD=ns1rc79dnanicveqt7lpsir7c6; PHPSESSID=kb3kf23hcp56hj4lbbu0teu735'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced-nenand/index.php'
+    'REMOTE_PORT' => '45529'
+    'REDIRECT_URL' => '/advanced-nenand/api/web/v1/Countries'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced-nenand/api/web/v1/Countries'
+    'SCRIPT_NAME' => '/advanced-nenand/index.php'
+    'PHP_SELF' => '/advanced-nenand/index.php'
+    'REQUEST_TIME_FLOAT' => 1444248413.762
+    'REQUEST_TIME' => 1444248413
+]
+2015-10-07 20:06:55 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api/web/v1/Countries".' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('api/web/v1/Coun...', Array)
+#1 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-10-07 20:06:55 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][info][application] $_COOKIE = [
+    'dynagrid-1_' => '9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a:2:{i:0;s:11:\"dynagrid-1_\";i:1;a:0:{}}'
+    'dynagrid-100_1' => 'd1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a:2:{i:0;s:14:\"dynagrid-100_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_1' => '9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a:2:{i:0;s:12:\"dynagrid-1_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_3' => '4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a:2:{i:0;s:12:\"dynagrid-1_3\";i:1;s:201:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-primary\\\",\\\"keys\\\":[\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    '_identity' => '6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS\",2592000]\";}'
+    '_csrf' => 'c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R\";}'
+    'RevmakerAD' => 'ns1rc79dnanicveqt7lpsir7c6'
+    'PHPSESSID' => 'kb3kf23hcp56hj4lbbu0teu735'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/advanced-nenand/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_COOKIE' => 'dynagrid-1_=9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22dynagrid-1_%22%3Bi%3A1%3Ba%3A0%3A%7B%7D%7D; dynagrid-100_1=d1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22dynagrid-100_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_1=9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_3=4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_3%22%3Bi%3A1%3Bs%3A201%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-primary%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; _identity=6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS%22%2C2592000%5D%22%3B%7D; _csrf=c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R%22%3B%7D; RevmakerAD=ns1rc79dnanicveqt7lpsir7c6; PHPSESSID=kb3kf23hcp56hj4lbbu0teu735'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'CONTENT_LENGTH' => '0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced-nenand/index.php'
+    'REMOTE_PORT' => '45529'
+    'REDIRECT_URL' => '/advanced-nenand/api/web/v1/Countries'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced-nenand/api/web/v1/Countries'
+    'SCRIPT_NAME' => '/advanced-nenand/index.php'
+    'PHP_SELF' => '/advanced-nenand/index.php'
+    'REQUEST_TIME_FLOAT' => 1444248415.349
+    'REQUEST_TIME' => 1444248415
+]
+2015-10-07 20:06:57 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api/web/v1/Countries".' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('api/web/v1/Coun...', Array)
+#1 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-10-07 20:06:57 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][info][application] $_COOKIE = [
+    'dynagrid-1_' => '9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a:2:{i:0;s:11:\"dynagrid-1_\";i:1;a:0:{}}'
+    'dynagrid-100_1' => 'd1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a:2:{i:0;s:14:\"dynagrid-100_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_1' => '9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a:2:{i:0;s:12:\"dynagrid-1_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_3' => '4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a:2:{i:0;s:12:\"dynagrid-1_3\";i:1;s:201:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-primary\\\",\\\"keys\\\":[\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    '_identity' => '6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS\",2592000]\";}'
+    '_csrf' => 'c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R\";}'
+    'RevmakerAD' => 'ns1rc79dnanicveqt7lpsir7c6'
+    'PHPSESSID' => 'kb3kf23hcp56hj4lbbu0teu735'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/advanced-nenand/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_COOKIE' => 'dynagrid-1_=9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22dynagrid-1_%22%3Bi%3A1%3Ba%3A0%3A%7B%7D%7D; dynagrid-100_1=d1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22dynagrid-100_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_1=9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_3=4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_3%22%3Bi%3A1%3Bs%3A201%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-primary%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; _identity=6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS%22%2C2592000%5D%22%3B%7D; _csrf=c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R%22%3B%7D; RevmakerAD=ns1rc79dnanicveqt7lpsir7c6; PHPSESSID=kb3kf23hcp56hj4lbbu0teu735'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced-nenand/index.php'
+    'REMOTE_PORT' => '45529'
+    'REDIRECT_URL' => '/advanced-nenand/api/web/v1/Countries'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'PUT'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced-nenand/api/web/v1/Countries'
+    'SCRIPT_NAME' => '/advanced-nenand/index.php'
+    'PHP_SELF' => '/advanced-nenand/index.php'
+    'REQUEST_TIME_FLOAT' => 1444248417.233
+    'REQUEST_TIME' => 1444248417
+]
+2015-10-07 20:07:06 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api/web/v1/Countries".' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('api/web/v1/Coun...', Array)
+#1 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-10-07 20:07:06 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][info][application] $_COOKIE = [
+    'dynagrid-1_' => '9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a:2:{i:0;s:11:\"dynagrid-1_\";i:1;a:0:{}}'
+    'dynagrid-100_1' => 'd1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a:2:{i:0;s:14:\"dynagrid-100_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_1' => '9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a:2:{i:0;s:12:\"dynagrid-1_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_3' => '4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a:2:{i:0;s:12:\"dynagrid-1_3\";i:1;s:201:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-primary\\\",\\\"keys\\\":[\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    '_identity' => '6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS\",2592000]\";}'
+    '_csrf' => 'c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R\";}'
+    'RevmakerAD' => 'ns1rc79dnanicveqt7lpsir7c6'
+    'PHPSESSID' => 'kb3kf23hcp56hj4lbbu0teu735'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/advanced-nenand/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'dynagrid-1_=9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22dynagrid-1_%22%3Bi%3A1%3Ba%3A0%3A%7B%7D%7D; dynagrid-100_1=d1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22dynagrid-100_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_1=9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_3=4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_3%22%3Bi%3A1%3Bs%3A201%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-primary%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; _identity=6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS%22%2C2592000%5D%22%3B%7D; _csrf=c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R%22%3B%7D; RevmakerAD=ns1rc79dnanicveqt7lpsir7c6; PHPSESSID=kb3kf23hcp56hj4lbbu0teu735'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced-nenand/index.php'
+    'REMOTE_PORT' => '45530'
+    'REDIRECT_URL' => '/advanced-nenand/api/web/v1/Countries'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced-nenand/api/web/v1/Countries'
+    'SCRIPT_NAME' => '/advanced-nenand/index.php'
+    'PHP_SELF' => '/advanced-nenand/index.php'
+    'REQUEST_TIME_FLOAT' => 1444248426.135
+    'REQUEST_TIME' => 1444248426
+]
+2015-10-07 20:07:08 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api/web/v1/Countries".' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('api/web/v1/Coun...', Array)
+#1 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/advanced-nenand/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/advanced-nenand/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-10-07 20:07:08 [127.0.0.1][1][kb3kf23hcp56hj4lbbu0teu735][info][application] $_COOKIE = [
+    'dynagrid-1_' => '9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a:2:{i:0;s:11:\"dynagrid-1_\";i:1;a:0:{}}'
+    'dynagrid-100_1' => 'd1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a:2:{i:0;s:14:\"dynagrid-100_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_1' => '9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a:2:{i:0;s:12:\"dynagrid-1_1\";i:1;s:213:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-danger\\\",\\\"keys\\\":[\\\"818ba797\\\",\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    'dynagrid-1_3' => '4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a:2:{i:0;s:12:\"dynagrid-1_3\";i:1;s:201:\"{\"grid\":\"{\\\"page\\\":\\\"10\\\",\\\"theme\\\":\\\"panel-primary\\\",\\\"keys\\\":[\\\"799ecc16\\\",\\\"c4897f9a\\\",\\\"7aeb764f\\\",\\\"fb20cc88\\\",\\\"3085acf2\\\",\\\"bc1f5a4f\\\",\\\"4a16cdfb\\\",\\\"7b6b4a62\\\"],\\\"filter\\\":\\\"\\\",\\\"sort\\\":\\\"\\\"}\"}\";}'
+    '_identity' => '6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS\",2592000]\";}'
+    '_csrf' => 'c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R\";}'
+    'RevmakerAD' => 'ns1rc79dnanicveqt7lpsir7c6'
+    'PHPSESSID' => 'kb3kf23hcp56hj4lbbu0teu735'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/advanced-nenand/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'dynagrid-1_=9d04c4d0f0b90a18e08d3be727ec619ae384cd04fc8c2b3dc5bc54314c129864a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22dynagrid-1_%22%3Bi%3A1%3Ba%3A0%3A%7B%7D%7D; dynagrid-100_1=d1e35f4caa8ae1fb837cbe7c1eafcac8f78dce5b326e2b6d3d8cbc0177b59c79a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22dynagrid-100_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_1=9498d85b96403a72dc22de387cc05bbf22aeff11038597d5c0d764627b330c50a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_1%22%3Bi%3A1%3Bs%3A213%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-danger%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22818ba797%5C%22%2C%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; dynagrid-1_3=4dc0870592ddb0b7e60c17e75be1e62090645e39d83abeed57c8bbbeef125aa7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22dynagrid-1_3%22%3Bi%3A1%3Bs%3A201%3A%22%7B%22grid%22%3A%22%7B%5C%22page%5C%22%3A%5C%2210%5C%22%2C%5C%22theme%5C%22%3A%5C%22panel-primary%5C%22%2C%5C%22keys%5C%22%3A%5B%5C%22799ecc16%5C%22%2C%5C%22c4897f9a%5C%22%2C%5C%227aeb764f%5C%22%2C%5C%22fb20cc88%5C%22%2C%5C%223085acf2%5C%22%2C%5C%22bc1f5a4f%5C%22%2C%5C%224a16cdfb%5C%22%2C%5C%227b6b4a62%5C%22%5D%2C%5C%22filter%5C%22%3A%5C%22%5C%22%2C%5C%22sort%5C%22%3A%5C%22%5C%22%7D%22%7D%22%3B%7D; _identity=6da657b6962a69323a84e7c5532e20aade320059d1b0d61ddff6a868eefa16fda%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22YFnCaLH6l8WHaYNioQCdhJVDPtJ_2BWS%22%2C2592000%5D%22%3B%7D; _csrf=c1b85e29ca1760aa4eca56105472b273070e9deb4b8c83aea501ade7976277d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W2lHqRIvQjLN9RsY_50-ays3pM9UKt3R%22%3B%7D; RevmakerAD=ns1rc79dnanicveqt7lpsir7c6; PHPSESSID=kb3kf23hcp56hj4lbbu0teu735'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced-nenand/index.php'
+    'REMOTE_PORT' => '45530'
+    'REDIRECT_URL' => '/advanced-nenand/api/web/v1/Countries'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced-nenand/api/web/v1/Countries'
+    'SCRIPT_NAME' => '/advanced-nenand/index.php'
+    'PHP_SELF' => '/advanced-nenand/index.php'
+    'REQUEST_TIME_FLOAT' => 1444248428.145
+    'REQUEST_TIME' => 1444248428
+]

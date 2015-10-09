@@ -1,0 +1,33 @@
+{
+	"name": "yii2-strength-meter",
+	"version": "1.0.0",
+	"homepage": "https://github.com/nenad-zivkovic/yii2-strength-meter",
+	"authors": [
+		"Kartik Visweswaran <kartikv2@gmail.com>",
+		"Nenad Zivkovic <contact@freetuts.org>"
+	],
+	"description": "Strength meter for password input validation for Yii2 application templates created by Nenad Z.",
+	"main": [
+        "./css/strength-meter.min.css",
+		"./js/strength-meter.min.js",
+		"./js/strength-meter-effect.min.js"
+	],
+	"keywords": [
+		"password",
+		"strength",
+		"meter"
+	],
+	"dependencies": {
+		"jquery": ">= 1.9.0"
+	},
+	"license": "BSD-3",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"composer.json",
+		"examples",
+		"bower_components",
+		"test",
+		"tests"
+	]
+}
