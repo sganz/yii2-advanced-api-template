@@ -44,7 +44,7 @@ for example: ``` cd /var/www/sites/ ```
 
 3. Run the Composer ```create-project``` command:
 
-   ``` composer create-project sganz/yii2-advanced-template advanced ```
+   ``` composer create-project sganz/yii2-advanced-api-template advanced ```
 
 4. Once template is downloaded, you need to initialize it in one of two environments:
 development (dev) or production (prod). Change your working directory to ```_protected``` 
