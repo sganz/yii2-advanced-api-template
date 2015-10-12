@@ -1,12 +1,12 @@
 {
-    "name": "nenad/yii2-advanced-template",
-    "description": "Improved Yii 2 Advanced Application Template By Nenad Zivkovic",
-    "keywords": ["yii2", "framework", "advanced", "improved", "application template", "nenad"],
+    "name": "sganz/yii2-advanced-api-template",
+    "description": "Improved Yii 2 Advanced Application Template By Sandy Ganz, Original by Nenad Zivkovic",
+    "keywords": ["yii2", "framework", "advanced", "improved", "application template", "nenad", "sganz"],
     "type": "project",
     "license": "BSD-3-Clause",
     "support": {
         "tutorial": "http://www.freetuts.org/tutorial/view?id=6",
-        "source": "https://github.com/nenad-zivkovic/yii2-advanced-template"
+        "source": "https://github.com/sganz/yii2-advanced-api-template.git"
     },
     "minimum-stability": "stable",
     "require": {
