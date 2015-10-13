@@ -3,11 +3,12 @@ yii2-advanced-api-template
 
 Yii2-advanced-template is based on yii2-app-advanced created by yii2 core developers. That being said the yii2-advanced-api-template is based on the yii2-advanced-template.
 
-There are several upgrades made to this template.
+There are several upgrades made to this template, including both Nenand's and Sandy's changes
 
-0. Support for an off webroot API application that can be used for a service layer or what ever you might want to call it. It has no view configuration.
-1. This template has additional features listed in the next section of this guide.
-2. Application structure has been changed to be 'shared hosting friendly'.
+1. Support for an off webroot API application that can be used for a service layer or what ever you might want to call it. It has no view configuration.
+2. This template has additional features listed in the next section of this guide.
+3. Application structure has been changed to be 'shared hosting friendly'.
+4. Added example modules and set up for REST as well as simple ajax api like calls with versions of the API (Via Modules and Routing)
 
 Features (Most From Yii2-advanced-template)
 -------------------
@@ -29,7 +30,7 @@ Features (Most From Yii2-advanced-template)
 - Password strength validation and strength meter.
 - All functionalities of default advanced template are included in this template.
 - Code is heavily commented out.
-- New API support with simple versioning. The folder structure is similar to the backend with some UI code and related remove
+- New API support with simple versioning. The folder structure is similar to the backend with some UI code and related directories removed
 
 
 Installation
@@ -120,7 +121,6 @@ _protected
     api
         assets/              contains backend assets definition
         config/              contains backend configurations
-        controllers/         contains Web controller classes
         helpers/             contains helper classes
         models/              contains backend-specific model classes
         runtime/             contains files generated during runtime
@@ -132,15 +132,19 @@ _protected
         models/              contains backend-specific model classes
         runtime/             contains files generated during runtime
         views/               contains view files for the Web application
+        widgets/             contains backend widgets
     common
         config/              contains shared configurations
+        helpers/             contains helper classes
         mail/                contains view files for e-mails
         models/              contains model classes used in both backend and frontend
         rbac/                contains role based access control classes
+        translations/		 contains translations
     console
         config/              contains console configurations
         controllers/         contains console controllers (commands)
         migrations/          contains database migrations
+        helpers/             contains helper classes
         models/              contains console-specific model classes
         runtime/             contains files generated during runtime
     environments             contains environment-based overrides
@@ -148,6 +152,7 @@ _protected
         assets/              contains frontend assets definition
         config/              contains frontend configurations
         controllers/         contains Web controller classes
+        helpers/             contains helper classes
         models/              contains frontend-specific model classes
         runtime/             contains files generated during runtime
         views/               contains view files for the Web application
@@ -160,11 +165,18 @@ themes                   contains frontend themes
 uploads                  contains various files that can be used by both frontend and backend applications
 
 ```
+Version 1.0.3 changes
+-------------------
+Added .gitkeep to some missing directories that are empty, this is just a file so git won't skip the empty directory
+Updated a few items in the file structure so things are a bit more consistent across the applications, mainly adding a helper directory to each
 
-Version 1.0.0 changes
+
+Initial version 1.0.0 changes and info
 -------------------
 Built from From v2.2.0 of yii-advanced-template. Added some examples for Rest API and simple controllers with some versions of the controller. The original 
-is from  https://github.com/nenad-zivkovic/yii2-advanced-template specific examples from Nenad Zivkovic can be found if you poke around his github page.
+is from  https://github.com/nenad-zivkovic/yii2-advanced-template specific examples from Nenad Zivkovic can be found if you poke around his github page. 
+
+The example code for the 'country' REST calls require a table in your DB to work. Put this in what ever DB you are activly connected to.
 
 The sql for the test table for countries is -
 
@@ -191,7 +203,7 @@ This was from a nice simple intro to yii2 and restfull controllers at - http://b
 
 Licensing 
 -------------------
-My work is licenced as WTFPL, which is NOT true for the original work which should remain as Nenad Zivkovic Licensed it. 
+My work (Sandy Ganz) is licenced as WTFPL, which is NOT true for the original work which should remain as Nenad Zivkovic and possibly YiiSoft Licensed it. 
 
 [![WTFPL](https://img.shields.io/badge/License-WTFPL-orange.svg)](http://www.wtfpl.net)
 [![Yii2](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](http://www.yiiframework.com/)
