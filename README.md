@@ -166,16 +166,8 @@ uploads                  contains various files that can be used by both fronten
 
 ```
 
-Version 1.0.4 changes
--------------------
-Removed composer lock files and more generated code that init takes care of. This is mostly due to my newb-ness in working with composer, and a template that should not be installed then committed to git...
 
-Version 1.0.3 changes
--------------------
-Added .gitkeep to some missing directories that are empty, this is just a file so git won't skip the empty directory
-Updated a few items in the file structure so things are a bit more consistent across the applications, mainly adding a helper directory to each
-
-Initial version 1.0.0 changes and info
+Comments
 -------------------
 Built from From v2.2.0 of yii-advanced-template. Added some examples for Rest API and simple controllers with some versions of the controller. The original 
 is from  https://github.com/nenad-zivkovic/yii2-advanced-template specific examples from Nenad Zivkovic can be found if you poke around his github page. 
