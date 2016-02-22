@@ -6,12 +6,12 @@
  * php requirements.php
  *
  * In order to run this script from the web, you should copy it to the web root.
- * If you are using Linux you can create a hard link instead, 
+ * If you are using Linux you can create a hard link instead,
  * using the following command: ln requirements.php ../requirements.php
  */
 
 // you may need to adjust this path to the correct Yii framework path
-$frameworkPath = dirname(__FILE__) . '/_protected/vendor/yiisoft/yii2';
+$frameworkPath = dirname(__FILE__) . '/protected/vendor/yiisoft/yii2';
 
 if (!is_dir($frameworkPath)) {
     echo '<h1>Error</h1>';
@@ -25,7 +25,7 @@ $requirementsChecker = new YiiRequirementChecker();
 
 /**
  * Adjust requirements according to your application specifics.
- * 
+ *
  * @var array
  */
 $requirements = array(
