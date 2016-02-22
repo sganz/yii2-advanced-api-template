@@ -41,7 +41,7 @@ Installation
 other tool you like).
 
 2. Now open up your console and ```cd``` to your web root directory,
-for example: ``` cd /var/www/sites/ ```
+for example: ``` cd /var/www/html/ ```
 
 3. Run the Composer ```create-project``` command:
 
