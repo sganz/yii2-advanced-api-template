@@ -1,7 +1,7 @@
 RewriteEngine on
 
 # hide files and folders
-RedirectMatch 404 /_protected
+RedirectMatch 404 /protected
 RedirectMatch 404 /\.git
 RedirectMatch 404 /composer\.
 RedirectMatch 404 /.bowerrc
@@ -11,4 +11,3 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 # Otherwise forward the request to index.php
 RewriteRule . index.php
-
