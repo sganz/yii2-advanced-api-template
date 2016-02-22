@@ -1,4 +1,4 @@
-yii2-advanced-api-template 
+yii2-advanced-api-template
 ======================
 
 Yii2-advanced-template is based on yii2-app-advanced created by yii2 core developers. That being said the yii2-advanced-api-template is based on the yii2-advanced-template.
@@ -40,7 +40,7 @@ Installation
 1. Create database that you are going to use for your application (you can use phpMyAdmin or any
 other tool you like).
 
-2. Now open up your console and ```cd``` to your web root directory, 
+2. Now open up your console and ```cd``` to your web root directory,
 for example: ``` cd /var/www/sites/ ```
 
 3. Run the Composer ```create-project``` command:
@@ -48,21 +48,21 @@ for example: ``` cd /var/www/sites/ ```
    ``` composer create-project sganz/yii2-advanced-api-template advanced ```
 
 4. Once template is downloaded, you need to initialize it in one of two environments:
-development (dev) or production (prod). Change your working directory to ```_protected``` 
+development (dev) or production (prod). Change your working directory to ```protected```
 and execute ```php init``` command.
 
-   ```cd advanced/_protected/```
+   ```cd advanced/protected/```
 
    ```php init ```
 
-   Type __0__ for development, execute coomant, type __yes__ to confirm, and execute again.
+   Type __0__ for development, execute coomand, type __yes__ to confirm, and execute again.
 
 5. Now you need to tell your application to use database that you have previously created.
-Open up main-local.php config file in ```advanced/_protected/common/config/main-local.php``` 
+Open up main-local.php config file in ```advanced/protected/common/config/main-local.php```
 and adjust your connection credentials.
 
 6. Back to the console. It is time to run yii migrations that will create necessary tables in our database.
-While you are inside ```_protected``` folder execute ```./yii migrate command```:
+While you are inside ```protected``` folder execute ```./yii migrate command```:
 
    ``` ./yii migrate ``` or if you are on Windows ``` yii migrate ```
 
@@ -73,16 +73,16 @@ permissions:
 
 You are done, you can start your application in your browser.
 
-__*Tip__: if your application name is, for example, __advanced__, to see the frontend side of it you 
-just have to visit this url in local host: ```localhost/advanced```. To see backend side, this is 
+__*Tip__: if your application name is, for example, __advanced__, to see the frontend side of it you
+just have to visit this url in local host: ```localhost/advanced```. To see backend side, this is
 enough: ```localhost/advanced/backend```.
 
-> Note: First user that signs up will get 'The Creator' (super admin) role. This is supposed to be you. This role have all possible super powers :) . Every other user that signs up after the first one will get 'member' role. Member is just normal authenticated user. 
+> Note: First user that signs up will get 'The Creator' (super admin) role. This is supposed to be you. This role have all possible super powers :) . Every other user that signs up after the first one will get 'member' role. Member is just normal authenticated user.
 
 Testing
 -------------------
 
-If you want to run tests you should create additional database that will be used to store 
+If you want to run tests you should create additional database that will be used to store
 your testing data. Usually testing database will have the same structure like the production one.
 I am assuming that you have Codeception installed globally, and that you know how to use it.
 Here is how you can set up everything easily:
@@ -91,7 +91,7 @@ Here is how you can set up everything easily:
 
 2. Inside your ```main-local.php``` config file change database you are going to use to ```advanced_tests```.
 
-3. Open up your console and ```cd``` to the ```_protected``` folder of your application.
+3. Open up your console and ```cd``` to the ```protected``` folder of your application.
 
 4. Run the migrations again: ``` ./yii migrate ``` or if you are on Windows ```yii migrate```
 
@@ -101,15 +101,15 @@ Here is how you can set up everything easily:
 Adjust your ```main-local.php``` config file again.
 
 7. Now you are ready to tell Codeception to use ```advanced_tests``` database.
-   
-   Inside: ``` _protected/tests/codeception/config/config.php ``` file tell your ```db``` to use 
+
+   Inside: ``` protected/tests/codeception/config/config.php ``` file tell your ```db``` to use
    ```advanced_tests``` database.
 
-8. Start your php server inside the root of your application: ``` php -S localhost:8080 ``` 
-(if the name of your application is advanced, then root is ```advanced``` folder) 
+8. Start your php server inside the root of your application: ``` php -S localhost:8080 ```
+(if the name of your application is advanced, then root is ```advanced``` folder)
 
-9. To run tests written for frontend side of your application 
-   ```cd``` to ```_protected/tests/codeception/frontend``` , run ```codecept build``` and then run your tests.
+9. To run tests written for frontend side of your application
+   ```cd``` to ```protected/tests/codeception/frontend``` , run ```codecept build``` and then run your tests.
 
 10. Take similar steps like in step 9 for backend and common tests.
 
@@ -117,12 +117,12 @@ Directory structure
 -------------------
 
 ```
-_protected
+protected
     api
-        assets/              contains backend assets definition
-        config/              contains backend configurations
+        assets/              contains api assets definition
+        config/              contains api configurations
         helpers/             contains helper classes
-        models/              contains backend-specific model classes
+        models/              contains api-specific model classes
         runtime/             contains files generated during runtime
     backend
         assets/              contains backend assets definition
@@ -169,8 +169,8 @@ uploads                  contains various files that can be used by both fronten
 
 Comments
 -------------------
-Built from From v2.2.0 of yii-advanced-template. Added some examples for Rest API and simple controllers with some versions of the controller. The original 
-is from  https://github.com/nenad-zivkovic/yii2-advanced-template specific examples from Nenad Zivkovic can be found if you poke around his github page. 
+Built from From v2.2.0 of yii-advanced-template. Added some examples for Rest API and simple controllers with some versions of the controller. The original
+is from  https://github.com/nenad-zivkovic/yii2-advanced-template specific examples from Nenad Zivkovic can be found if you poke around his github page.
 
 The example code for the 'country' REST calls require a table in your DB to work. Put this in what ever DB you are activly connected to.
 
@@ -192,14 +192,14 @@ INSERT INTO `Country` VALUES ('FR','France',59225700);
 INSERT INTO `Country` VALUES ('GB','United Kingdom',59623400);
 INSERT INTO `Country` VALUES ('IN','India',1013662000);
 INSERT INTO `Country` VALUES ('RU','Russia',146934000);
-INSERT INTO `Country` VALUES ('US','United States',278357000); 
+INSERT INTO `Country` VALUES ('US','United States',278357000);
 ```
 
 This was from a nice simple intro to yii2 and restfull controllers at - http://budiirawan.com/setup-restful-api-yii2
 
-Licensing 
+Licensing
 -------------------
-My work (Sandy Ganz) is licenced as WTFPL, which is NOT true for the original work which should remain as Nenad Zivkovic and possibly YiiSoft Licensed it. 
+My work (Sandy Ganz) is licenced as WTFPL, which is NOT true for the original work which should remain as Nenad Zivkovic and possibly YiiSoft Licensed it.
 
 [![WTFPL](https://img.shields.io/badge/License-WTFPL-orange.svg)](http://www.wtfpl.net)
 [![Yii2](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](http://www.yiiframework.com/)

@@ -32,43 +32,43 @@ return [
     'Development' => [
         'path' => 'dev',
         'setWritable' => [
-            '_protected/backend/runtime',
-            '_protected/frontend/runtime',
-            '_protected/frontend/runtime/mail',
-            '_protected/api/runtime',	// added sjg
+            'protected/backend/runtime',
+            'protected/frontend/runtime',
+            'protected/frontend/runtime/mail',
+            'protected/api/runtime',	// added sjg
             '/assets',
             '/uploads',
             '/backend/assets',
             '/api/assets',	// added sjg
         ],
         'setExecutable' => [
-            '_protected/yii',
+            'protected/yii',
             'tests/codeception/bin/yii',
         ],
         'setCookieValidationKey' => [
-            '_protected/backend/config/main-local.php',
-            '_protected/frontend/config/main-local.php',
-            '_protected/api/config/main-local.php',	// added sjg
+            'protected/backend/config/main-local.php',
+            'protected/frontend/config/main-local.php',
+            'protected/api/config/main-local.php',	// added sjg
         ],
     ],
     'Production' => [
         'path' => 'prod',
         'setWritable' => [
-            '_protected/backend/runtime',
-            '_protected/frontend/runtime',
-            '_protected/api/runtime',	// added sjg
+            'protected/backend/runtime',
+            'protected/frontend/runtime',
+            'protected/api/runtime',	// added sjg
             '/assets',
             '/backend/assets',
             '/api/assets',
         ],
         'setExecutable' => [
-            '_protected/yii',
-            '_protected/frontend/runtime/mail',
+            'protected/yii',
+            'protected/frontend/runtime/mail',
         ],
         'setCookieValidationKey' => [
-            '_protected/backend/config/main-local.php',
-            '_protected/frontend/config/main-local.php',
-            '_protected/api/config/main-local.php',	// added sjg 
+            'protected/backend/config/main-local.php',
+            'protected/frontend/config/main-local.php',
+            'protected/api/config/main-local.php',	// added sjg
         ],
     ],
 ];
